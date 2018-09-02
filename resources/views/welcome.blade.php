@@ -84,7 +84,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ url('graficar') }}">{{ __('Graficar') }}</a>
+                    @auth
+                        <a href="{{ url('graficar') }}">{{ __('Graficar') }}</a>
+                    @endauth
                     <a href="https://github.com/HighWolf">GitHub</a>
                 </div>
             </div>
